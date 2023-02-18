@@ -32,7 +32,7 @@ function createTr(tr ,count,Name,firstInput,secondInput,total){
       return tr;
 
 }
-
+// trianlge addeventLisiener
 document.getElementById("triangle-btn").addEventListener("click",function(e){
       let parentNode = e.target.parentNode.parentNode;
      
@@ -41,6 +41,103 @@ document.getElementById("triangle-btn").addEventListener("click",function(e){
       let firstInput =parseFloat(getCardInputvalue(parentNode,5,1));
       let secondInput = parseFloat(getCardInputvalue(parentNode,5,3));
       let total = (0.5 * firstInput * secondInput).toFixed(2) ;
+      if(isNaN(firstInput) || isNaN(secondInput) || firstInput <= 0 || secondInput <= 0 ){
+            alert("please enter the positive number");
+            return ;
+      }
+      else{
+
+            count+=1;
+
+   const tr=document.createElement("tr");
+   createTr(tr,count, Name,firstInput,secondInput,total);
+ // console.log(tr);
+
+      tableContainer.appendChild(tr);
+      }
+})
+
+// rectangle addeventLitener 
+document.getElementById("rectanlge-btn").addEventListener("click",function(e){
+      let parentNode = e.target.parentNode.parentNode;
+     
+      let Name =getCardName(parentNode);
+      //console.log(1);
+      
+      let firstInput =parseFloat(getCardInputvalue(parentNode,5,1));
+      let secondInput = parseFloat(getCardInputvalue(parentNode,5,3));
+      let total = (firstInput * secondInput).toFixed(2) ;
+      if(isNaN(firstInput) || isNaN(secondInput) || firstInput <= 0 || secondInput <= 0 ){
+            alert("please enter the positive number");
+            return ;
+      }
+      else{
+
+            count+=1;
+
+   const tr=document.createElement("tr");
+   createTr(tr,count, Name,firstInput,secondInput,total);
+ // console.log(tr);
+
+      tableContainer.appendChild(tr);
+      }
+})
+
+
+
+// parallelogram addeventLitener 
+
+
+
+
+document.getElementById("parallelogram-btn").addEventListener("click",function(e){
+      let parentNode = e.target.parentNode.parentNode;
+     
+      let Name =getCardName(parentNode);
+      console.log(1);
+      
+      let firstInput =parseFloat(getCardInputvalue(parentNode,5,1));
+      let secondInput = parseFloat(getCardInputvalue(parentNode,5,3));
+      let total = (firstInput * secondInput).toFixed(2) ;
+      if(isNaN(firstInput) || isNaN(secondInput) || firstInput <= 0 || secondInput <= 0 ){
+            alert("please enter the positive number");
+            return ;
+      }
+      else{
+
+            count+=1;
+
+   const tr=document.createElement("tr");
+   createTr(tr,count, Name,firstInput,secondInput,total);
+ // console.log(tr);
+
+      tableContainer.appendChild(tr);
+      }
+})
+
+
+
+
+
+
+
+
+// Rhombus addeventLitener 
+
+
+
+
+
+
+document.getElementById("rhombus-btn").addEventListener("click",function(e){
+      let parentNode = e.target.parentNode.parentNode;
+     
+      let Name =getCardName(parentNode);
+      console.log(1);
+      
+      let firstInput =parseFloat(getCardInputvalue(parentNode,5,1));
+      let secondInput = parseFloat(getCardInputvalue(parentNode,5,3));
+      let total = (0.5*firstInput * secondInput).toFixed(2) ;
       if(isNaN(firstInput) || isNaN(secondInput) || firstInput <= 0 || secondInput <= 0 ){
             alert("please enter the positive number");
             return ;
@@ -66,20 +163,71 @@ document.getElementById("triangle-btn").addEventListener("click",function(e){
 
 
 
+//Pantagon addeventLitener 
 
 
 
 
 
 
+document.getElementById("pentagon-btn").addEventListener("click",function(e){
+      let parentNode = e.target.parentNode.parentNode;
+     
+      let Name =getCardName(parentNode);
+      console.log(1);
+      
+      let firstInput =parseFloat(getCardInputvalue(parentNode,5,1));
+      let secondInput = parseFloat(getCardInputvalue(parentNode,5,3));
+      let total = (0.5*firstInput * secondInput).toFixed(2) ;
+      if(isNaN(firstInput) || isNaN(secondInput) || firstInput <= 0 || secondInput <= 0 ){
+            alert("please enter the positive number");
+            return ;
+      }
+      else{
+
+            count+=1;
+
+   const tr=document.createElement("tr");
+   createTr(tr,count, Name,firstInput,secondInput,total);
+ // console.log(tr);
+
+      tableContainer.appendChild(tr);
+      }
+})
+
+
+
+//Ellipse addeventLitener 
 
 
 
 
 
 
+document.getElementById("ellipse-btn").addEventListener("click",function(e){
+      let parentNode = e.target.parentNode.parentNode;
+     
+      let Name =getCardName(parentNode);
+      console.log(1);
+      
+      let firstInput =parseFloat(getCardInputvalue(parentNode,5,1));
+      let secondInput = parseFloat(getCardInputvalue(parentNode,5,3));
+      let total = (0.5*firstInput * secondInput).toFixed(2) ;
+      if(isNaN(firstInput) || isNaN(secondInput) || firstInput <= 0 || secondInput <= 0 ){
+            alert("please enter the positive number");
+            return ;
+      }
+      else{
 
+            count+=1;
 
+   const tr=document.createElement("tr");
+   createTr(tr,count, Name,firstInput,secondInput,total);
+ // console.log(tr);
+
+      tableContainer.appendChild(tr);
+      }
+})
 
 
 
