@@ -27,11 +27,11 @@ function setCardInputvalue(parentNode, index1, index2) {
       parentNode.childNodes[index1].childNodes[index2].value = "";
 }
 // tr created by function 
-function createTr(tr, count, Name, firstInput, secondInput, total) {
-      tr.innerHTML = `
+function createTr(h2, count, Name, firstInput, secondInput, total) {
+      h2.innerHTML = `
       ${count}. ${Name} ${total} cm<sup>2</sup>  <button class="btn btn-primary">convert to m <sup>2</sup></button> 
        `
-      return tr;
+      return h2;
 
 }
 
