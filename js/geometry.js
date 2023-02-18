@@ -20,6 +20,18 @@ function getCardInputvalue(parentNode,index1,index2) {
 
 }
 // tr created by function 
+function createTr(tr ,count,Name,firstInput,secondInput,total){
+      tr.innerHTML = `
+      <td>${count} .</td>
+                                       <td>${Name}</td>
+                                       <td>${total} cm<sup>2</sup></td>
+                                       <td><button class="btn btn-primary">Convert to m<sup>2</sup></button></td>
+      
+      
+      `
+      return tr;
+
+}
 
 document.getElementById("triangle-btn").addEventListener("click",function(e){
       let parentNode = e.target.parentNode.parentNode;
@@ -38,9 +50,8 @@ document.getElementById("triangle-btn").addEventListener("click",function(e){
             count+=1;
 
    const tr=document.createElement("tr");
-   //createTr(tr,count, Name,firstInput,secondInput,total);
- 
-      console.log(tr);
+   createTr(tr,count, Name,firstInput,secondInput,total);
+ // console.log(tr);
 
       tableContainer.appendChild(tr);
       }
