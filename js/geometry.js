@@ -52,7 +52,7 @@ document.getElementById("triangle-btn").addEventListener("click",function(e){
    const tr=document.createElement("tr");
    createTr(tr,count, Name,firstInput,secondInput,total);
  // console.log(tr);
-
+ tr.classList.add("mb-4");
       tableContainer.appendChild(tr);
       }
 })
@@ -78,7 +78,7 @@ document.getElementById("rectanlge-btn").addEventListener("click",function(e){
    const tr=document.createElement("tr");
    createTr(tr,count, Name,firstInput,secondInput,total);
  // console.log(tr);
-
+ tr.classList.add("mb-4");
       tableContainer.appendChild(tr);
       }
 })
@@ -109,6 +109,7 @@ document.getElementById("parallelogram-btn").addEventListener("click",function(e
 
    const tr=document.createElement("tr");
    createTr(tr,count, Name,firstInput,secondInput,total);
+   tr.classList.add("mb-4");
  // console.log(tr);
 
       tableContainer.appendChild(tr);
@@ -148,6 +149,7 @@ document.getElementById("rhombus-btn").addEventListener("click",function(e){
 
    const tr=document.createElement("tr");
    createTr(tr,count, Name,firstInput,secondInput,total);
+   tr.classList.add("mb-4");
  // console.log(tr);
 
       tableContainer.appendChild(tr);
@@ -189,6 +191,7 @@ document.getElementById("pentagon-btn").addEventListener("click",function(e){
 
    const tr=document.createElement("tr");
    createTr(tr,count, Name,firstInput,secondInput,total);
+   tr.classList.add("mb-4");
  // console.log(tr);
 
       tableContainer.appendChild(tr);
@@ -212,7 +215,7 @@ document.getElementById("ellipse-btn").addEventListener("click",function(e){
       
       let firstInput =parseFloat(getCardInputvalue(parentNode,5,1));
       let secondInput = parseFloat(getCardInputvalue(parentNode,5,3));
-      let total = (0.5*firstInput * secondInput).toFixed(2) ;
+      let total = (3.14*firstInput * secondInput).toFixed(2) ;
       if(isNaN(firstInput) || isNaN(secondInput) || firstInput <= 0 || secondInput <= 0 ){
             alert("please enter the positive number");
             return ;
@@ -222,14 +225,21 @@ document.getElementById("ellipse-btn").addEventListener("click",function(e){
             count+=1;
 
    const tr=document.createElement("tr");
+   
    createTr(tr,count, Name,firstInput,secondInput,total);
+   
  // console.log(tr);
+ tr.classList.add("mb-2");
+ tr.classList.add("overflow-scroll");
 
       tableContainer.appendChild(tr);
       }
 })
 
 
+randomColor = function(e) {
+	e.style.background =  "#" + (Math.random()* 0xFFFFFF<<0).toString(16);
+}
 
 
 
