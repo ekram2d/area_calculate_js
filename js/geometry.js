@@ -26,7 +26,7 @@ function getCardInputvalue(parentNode, index1, index2) {
 function setCardInputvalue(parentNode, index1, index2) {
       parentNode.childNodes[index1].childNodes[index2].value = "";
 }
-// tr created by function 
+// h2 created by function 
 function createTr(h2, count, Name, firstInput, secondInput, total) {
       h2.innerHTML = `
       ${count}. ${Name} ${total} cm<sup>2</sup>  <button class="btn btn-primary">convert to m <sup>2</sup></button> 
@@ -264,7 +264,7 @@ document.getElementById("ellipse-btn").addEventListener("click", function (e) {
 
             const h2 = document.createElement("h2");
             createTr(h2, count, Name, firstInput, secondInput, total);
-            
+
             h2.classList.add("flex");
             h2.classList.add("gap-2");
             h2.classList.add("m-2");
@@ -275,7 +275,6 @@ document.getElementById("ellipse-btn").addEventListener("click", function (e) {
             setCardInputvalue(parentNode, 5, 3)
       }
 })
-document.que
 
 randomColor = function (e) {
       e.style.background = "#" + (Math.random() * 0xFFFFFF << 0).toString(16);
