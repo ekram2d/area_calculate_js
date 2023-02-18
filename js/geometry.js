@@ -26,7 +26,7 @@ function getCardInputvalue(parentNode, index1, index2) {
 function setCardInputvalue(parentNode, index1, index2) {
       parentNode.childNodes[index1].childNodes[index2].value = "";
 }
-// h2 created by function 
+// h2 created by function to store the area 
 function createh2(h2, count, Name, firstInput, secondInput, total) {
       h2.innerHTML = `
       ${count}. ${Name} ${total} cm<sup>2</sup>  <button class="btn btn-primary">convert to m <sup>2</sup></button> 
