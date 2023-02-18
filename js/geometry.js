@@ -23,16 +23,14 @@ function getCardInputvalue(parentNode, index1, index2) {
 
 
 }
+function setCardInputvalue(parentNode, index1, index2) {
+      parentNode.childNodes[index1].childNodes[index2].value = "";
+}
 // tr created by function 
 function createTr(tr, count, Name, firstInput, secondInput, total) {
       tr.innerHTML = `
-      <td>${count} .</td>
-                                       <td>${Name}</td>
-                                       <td>${total} cm<sup>2</sup></td>
-                                       <td><button class="btn btn-primary">Convert to m<sup>2</sup></button></td>
-      
-      
-      `
+      ${count}. ${Name} ${total} cm<sup>2</sup>  <button class="btn btn-primary">convert to m <sup>2</sup></button> 
+       `
       return tr;
 
 }
@@ -57,11 +55,18 @@ document.getElementById("triangle-btn").addEventListener("click", function (e) {
 
             count += 1;
 
-            const tr = document.createElement("tr");
-            createTr(tr, count, Name, firstInput, secondInput, total);
+            const h2 = document.createElement("h2");
+            createTr(h2, count, Name, firstInput, secondInput, total);
 
-            tr.classList.add("mb-4");
-            tableContainer.appendChild(tr);
+            h2.classList.add("flex");
+            h2.classList.add("gap-2");
+            h2.classList.add("m-2");
+            h2.classList.add("items-center");
+
+            tableContainer.appendChild(h2);
+
+            setCardInputvalue(parentNode, 5, 1)
+            setCardInputvalue(parentNode, 5, 3)
       }
 })
 
@@ -70,7 +75,7 @@ document.getElementById("rectanlge-btn").addEventListener("click", function (e) 
       let parentNode = e.target.parentNode.parentNode;
 
       let Name = getCardName(parentNode);
-     
+
 
       let firstInput = parseFloat(getCardInputvalue(parentNode, 5, 1));
       let secondInput = parseFloat(getCardInputvalue(parentNode, 5, 3));
@@ -83,11 +88,17 @@ document.getElementById("rectanlge-btn").addEventListener("click", function (e) 
 
             count += 1;
 
-            const tr = document.createElement("tr");
-            createTr(tr, count, Name, firstInput, secondInput, total);
-            
-            tr.classList.add("mb-4");
-            tableContainer.appendChild(tr);
+            const h2 = document.createElement("h2");
+            createTr(h2, count, Name, firstInput, secondInput, total);
+
+            h2.classList.add("flex");
+            h2.classList.add("gap-2");
+            h2.classList.add("m-2");
+            h2.classList.add("items-center");
+
+            tableContainer.appendChild(h2);
+            setCardInputvalue(parentNode, 5, 1)
+            setCardInputvalue(parentNode, 5, 3)
       }
 })
 
@@ -102,7 +113,7 @@ document.getElementById("parallelogram-btn").addEventListener("click", function 
       let parentNode = e.target.parentNode.parentNode;
 
       let Name = getCardName(parentNode);
-    
+
       let firstInput = parseFloat(getCardInputvalue(parentNode, 5, 1));
       let secondInput = parseFloat(getCardInputvalue(parentNode, 5, 3));
       let total = (firstInput * secondInput).toFixed(2);
@@ -114,11 +125,17 @@ document.getElementById("parallelogram-btn").addEventListener("click", function 
 
             count += 1;
 
-            const tr = document.createElement("tr");
-            createTr(tr, count, Name, firstInput, secondInput, total);
-            tr.classList.add("mb-4");
-           
-            tableContainer.appendChild(tr);
+            const h2 = document.createElement("h2");
+            createTr(h2, count, Name, firstInput, secondInput, total);
+
+            h2.classList.add("flex");
+            h2.classList.add("gap-2");
+            h2.classList.add("m-2");
+            h2.classList.add("items-center");
+
+            tableContainer.appendChild(h2);
+            setCardInputvalue(parentNode, 5, 1)
+            setCardInputvalue(parentNode, 5, 3)
       }
 })
 
@@ -140,7 +157,7 @@ document.getElementById("rhombus-btn").addEventListener("click", function (e) {
       let parentNode = e.target.parentNode.parentNode;
 
       let Name = getCardName(parentNode);
-     
+
 
       let firstInput = parseFloat(getCardInputvalue(parentNode, 5, 1));
       let secondInput = parseFloat(getCardInputvalue(parentNode, 5, 3));
@@ -153,12 +170,17 @@ document.getElementById("rhombus-btn").addEventListener("click", function (e) {
 
             count += 1;
 
-            const tr = document.createElement("tr");
-            createTr(tr, count, Name, firstInput, secondInput, total);
-            tr.classList.add("mb-4");
-            
+            const h2 = document.createElement("h2");
+            createTr(h2, count, Name, firstInput, secondInput, total);
 
-            tableContainer.appendChild(tr);
+            h2.classList.add("flex");
+            h2.classList.add("gap-2");
+            h2.classList.add("m-2");
+            h2.classList.add("items-center");
+
+            tableContainer.appendChild(h2);
+            setCardInputvalue(parentNode, 5, 1)
+            setCardInputvalue(parentNode, 5, 3)
       }
 })
 
@@ -182,7 +204,7 @@ document.getElementById("pentagon-btn").addEventListener("click", function (e) {
       let parentNode = e.target.parentNode.parentNode;
 
       let Name = getCardName(parentNode);
-     
+
 
       let firstInput = parseFloat(getCardInputvalue(parentNode, 5, 1));
       let secondInput = parseFloat(getCardInputvalue(parentNode, 5, 3));
@@ -195,12 +217,17 @@ document.getElementById("pentagon-btn").addEventListener("click", function (e) {
 
             count += 1;
 
-            const tr = document.createElement("tr");
-            createTr(tr, count, Name, firstInput, secondInput, total);
-            tr.classList.add("mb-4");
-           
+            const h2 = document.createElement("h2");
+            createTr(h2, count, Name, firstInput, secondInput, total);
 
-            tableContainer.appendChild(tr);
+            h2.classList.add("flex");
+            h2.classList.add("gap-2");
+            h2.classList.add("m-2");
+            h2.classList.add("items-center");
+
+            tableContainer.appendChild(h2);
+            setCardInputvalue(parentNode, 5, 1)
+            setCardInputvalue(parentNode, 5, 3)
       }
 })
 
@@ -217,7 +244,7 @@ document.getElementById("ellipse-btn").addEventListener("click", function (e) {
       let parentNode = e.target.parentNode.parentNode;
 
       let Name = getCardName(parentNode);
-      
+
 
       let firstInput = parseFloat(getCardInputvalue(parentNode, 5, 1));
       let secondInput = parseFloat(getCardInputvalue(parentNode, 5, 3));
@@ -230,15 +257,22 @@ document.getElementById("ellipse-btn").addEventListener("click", function (e) {
 
             count += 1;
 
-            const tr = document.createElement("tr");
+            const tr = document.createElement("h2");
 
             createTr(tr, count, Name, firstInput, secondInput, total);
 
-            
-            tr.classList.add("mb-2");
-            tr.classList.add("overflow-scroll");
 
-            tableContainer.appendChild(tr);
+            const h2 = document.createElement("h2");
+            createTr(h2, count, Name, firstInput, secondInput, total);
+            
+            h2.classList.add("flex");
+            h2.classList.add("gap-2");
+            h2.classList.add("m-2");
+            h2.classList.add("items-center");
+
+            tableContainer.appendChild(h2);
+            setCardInputvalue(parentNode, 5, 1)
+            setCardInputvalue(parentNode, 5, 3)
       }
 })
 document.que

@@ -13,7 +13,7 @@
 
 <body>
       <!-- navbar -->
-      <header class="w-full lg:w-[90%] mx-auto mt-6">
+      <header class="w-full lg:w-[95%] mx-auto mt-6">
 
             <div class="navbar bg-base-100 shadow-lg p-4 bg-slate-300">
                   <div class="navbar-start">
@@ -25,7 +25,7 @@
                                                 d="M4 6h16M4 12h8m-8 6h16" />
                                     </svg>
                               </label>
-                              
+
                         </div>
 
                         <a class="btn btn-ghost normal-case text-xl inline ">Interactive
@@ -49,112 +49,120 @@
       <main>
 
 
-            <section class="w-full lg:w-[90%]  mt-10 mx-auto  lg:flex justify-between gap-2 px-4">
-                  <div class="w-full lg:w-[80%] lg:grid lg:grid-cols-3 gap-4 ">
+            <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row mt-10">
+                  <div class="w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
 
-                        <div onmouseover="randomColor(this)" id="triangle" class="card w-80 bg-base-100 shadow-xl ">
-                              <figure class="px-10 pt-10">
-                                    <img class="w-auto" src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        <div onmouseover="randomColor(this)" id="triangle"
+                              class="card card-compact w-full bg-base-100 shadow-xl p-2">
+                              <figure class="p-2">
+                                    <img class="w-full h-40 " src="images/triangle.png" alt="Shoes" />
                               </figure>
-                              <div  class="card-body items-center text-center">
+                              <div class="card-body items-center text-center">
                                     <h2 class="card-title">Triangle</h2>
                                     <p class="">area(A) = 0.5 x b x h</p>
-                                    <div>
+                                    <div class="w-full ">
                                           <input type="number" placeholder="b"
-                                                class="input input-bordered input-info w-[40%]  " />cm
+                                                class="input input-bordered input-info w-[85%] m-2 " />cm
                                           <input type="number" placeholder="h"
-                                                class="input input-bordered input-info w-[40%] m-2" />cm
+                                                class="input input-bordered input-info w-[85%] m-2 " />cm
                                     </div>
                                     <div class="card-actions">
                                           <button id="triangle-btn" class="btn btn-primary">Calculate</button>
                                     </div>
                               </div>
                         </div>
-                        <div onmouseover="randomColor(this)" id="rectangle" class="card w-80 bg-base-100 shadow-xl">
-                              <figure class="px-10 pt-10">
-                                    <img class="w-auto" src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                        <div onmouseover="randomColor(this)" id="rectangle"
+                              class="card card-compact w-full bg-base-100 shadow-xl p-2">
+                              <figure class="p-3 ">
+                                    <img class="w-full h-40" src="images/rectangle.png" alt="Shoes"
+                                          class="rounded-xl" />
                               </figure>
                               <div class="card-body items-center text-center">
                                     <h2 class="card-title">Rectangle</h2>
                                     <p>area(A) = w x l</p>
-                                    <div>
+                                    <div class="w-full">
                                           <input type="number" placeholder="w"
-                                                class="input input-bordered input-info w-[40%]  " />cm
+                                                class="input input-bordered input-info w-[85%] m-2  " />cm
                                           <input type="number" placeholder="l"
-                                                class="input input-bordered input-info w-[40%] m-2" />cm
+                                                class="input input-bordered input-info w-[85%]  m-2" />cm
                                     </div>
                                     <div class="card-actions">
                                           <button id="rectanlge-btn" class="btn btn-primary">Calculate</button>
                                     </div>
                               </div>
                         </div>
-                        <div onmouseover="randomColor(this)" id="Parallelogram" class="card w-80 bg-base-100 shadow-xl">
-                              <figure class="px-10 pt-10">
-                                    <img class="w-auto" src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                        <div onmouseover="randomColor(this)" id="parallelogram"
+                              class="card card-compact w-full bg-base-100 shadow-xl p-2">
+                              <figure class="p-3">
+                                    <img class="w-full h-40 " src="images/parallelogram.png" alt="Shoes" />
                               </figure>
                               <div class="card-body items-center text-center">
                                     <h2 class="card-title">parallelogram</h2>
                                     <p>area(A) = b x h</p>
                                     <div>
                                           <input type="number" placeholder="b"
-                                                class="input input-bordered input-info w-[40%]  " />cm
+                                                class="input input-bordered input-info w-[85%] m-2  " />cm
                                           <input type="number" placeholder="h"
-                                                class="input input-bordered input-info w-[40%] m-2" />cm
+                                                class="input input-bordered input-info w-[85%]  m-2" />cm
                                     </div>
                                     <div class="card-actions">
                                           <button id="parallelogram-btn" class="btn btn-primary">Calculate</button>
                                     </div>
                               </div>
                         </div>
-                        <div  onmouseover="randomColor(this)" id="Rhombus" class="card w-80 bg-base-100 shadow-xl">
-                              <figure class="px-10 pt-10">
-                                    <img class="w-auto" src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                        <div onmouseover="randomColor(this)" id="rhombus"
+                              class="card card-compact w-full bg-base-100 shadow-xl p-2">
+                              <figure class="p-3">
+                                    <img class="w-full h-40 " src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
                               </figure>
                               <div class="card-body items-center text-center">
                                     <h2 class="card-title">Rhombus</h2>
                                     <p>area(A) = 0.5 x d <sub>1</sub> x d<sub>2</sub></p>
-                                    <div>
+                                    <div class="w-full">
                                           <input type="number" placeholder="d1"
-                                                class="input input-bordered input-info w-[40%]  " />cm
+                                                class="input input-bordered input-info w-[85%] m-2 " />cm
                                           <input type="number" placeholder="d2"
-                                                class="input input-bordered input-info w-[40%] m-2" />cm
+                                                class="input input-bordered input-info w-[85%]  m-2" />cm
                                     </div>
                                     <div class="card-actions">
                                           <button id="rhombus-btn" class="btn btn-primary">Calculate</button>
                                     </div>
                               </div>
                         </div>
-                        <div onmouseover="randomColor(this)" id="Pentagon" class="card w-80 bg-base-100 shadow-xl">
-                              <figure class="px-10 pt-10">
-                                    <img class="w-auto" src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                        <div onmouseover="randomColor(this)" id="pentagon"
+                              class="card card-compact w-full bg-base-100 shadow-xl p-2">
+                              <figure class="p-3">
+                                    <img class="w-full h-40 " src="images/pentagon.png" alt="Shoes"
+                                          class="rounded-xl" />
                               </figure>
                               <div class="card-body items-center text-center">
                                     <h2 class="card-title">Pantagon</h2>
                                     <p>area(A) = 0.5 x p x b</p>
-                                    <div>
+                                    <div class="w-full">
                                           <input type="number" placeholder="p"
-                                                class="input input-bordered input-info w-[40%]  " />cm
+                                                class="input input-bordered input-info w-[85%] m-2 " />cm
                                           <input type="number" placeholder="b"
-                                                class="input input-bordered input-info w-[40%] m-2" />cm
+                                                class="input input-bordered input-info w-[85%]  m-2" />cm
                                     </div>
                                     <div class="card-actions">
                                           <button id="pentagon-btn" class="btn btn-primary">Calculate</button>
                                     </div>
                               </div>
                         </div>
-                        <div onmouseover="randomColor(this)" id="Ellipse" class="card w-80 bg-base-100 shadow-xl">
-                              <figure class="px-10 pt-10">
-                                    <img class="w-auto" src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                        <div onmouseover="randomColor(this)" id="ellipse"
+                              class="card card-compact w-full bg-base-100 shadow-xl p-2">
+                              <figure class="p-3">
+                                    <img class="w-full h-40 " src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
                               </figure>
                               <div class="card-body items-center text-center">
                                     <h2 class="card-title">Ellipse</h2>
                                     <p>area(A) = &#928;ab</p>
-                                    <div>
+                                    <div class="w-full">
                                           <input type="number" placeholder="a"
-                                                class="input input-bordered input-info w-[40%]  " />cm
+                                                class="input input-bordered input-info w-[85%] m-2 " />cm
                                           <input type="number" placeholder="b"
-                                                class="input input-bordered input-info w-[40%] m-2" />cm
+                                                class="input input-bordered input-info w-[85%]  m-2" />cm
                                     </div>
                                     <div class="card-actions">
                                           <button id="ellipse-btn" class="btn btn-primary">Calculate</button>
@@ -163,24 +171,21 @@
                         </div>
 
                   </div>
-                  <div class="w-full lg:w-[40%]">
+                  <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
 
 
                         <h1 class="font-bold text-2xl text-center mt-2 underline">Area Calculation </h1>
 
+                        <div id="table-container" class="p-3 w-full m-2 ">
+                              <!-- <h3 class=" flex gap-2 m-2 items-center justify-center">1 12222222 <button class="btn btn-primary">convert to m <sup>2</sup></button> </h3> -->
 
-                        <div>
-                              <table class="w-full p-2 mt-10 mx-2 ">
-                                    <tbody id="table-container">
-                                          <!-- <tr>
-                                                <td>1 .</td>
-                                                <td>Triangle</td>
-                                                <td>12 cm<sup>2</sup></td>
-                                                <td><button class="btn btn-primary">Button</button></td>
-                                          </tr> -->
-                                    </tbody>
-                              </table>
                         </div>
+
+
+
+
+
+
                   </div>
             </section>
 
