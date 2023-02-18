@@ -27,7 +27,7 @@ function setCardInputvalue(parentNode, index1, index2) {
       parentNode.childNodes[index1].childNodes[index2].value = "";
 }
 // h2 created by function 
-function createTr(h2, count, Name, firstInput, secondInput, total) {
+function createh2(h2, count, Name, firstInput, secondInput, total) {
       h2.innerHTML = `
       ${count}. ${Name} ${total} cm<sup>2</sup>  <button class="btn btn-primary">convert to m <sup>2</sup></button> 
        `
@@ -56,7 +56,7 @@ document.getElementById("triangle-btn").addEventListener("click", function (e) {
             count += 1;
 
             const h2 = document.createElement("h2");
-            createTr(h2, count, Name, firstInput, secondInput, total);
+            createh2(h2, count, Name, firstInput, secondInput, total);
 
             h2.classList.add("flex");
             h2.classList.add("gap-2");
@@ -89,7 +89,7 @@ document.getElementById("rectanlge-btn").addEventListener("click", function (e) 
             count += 1;
 
             const h2 = document.createElement("h2");
-            createTr(h2, count, Name, firstInput, secondInput, total);
+            createh2(h2, count, Name, firstInput, secondInput, total);
 
             h2.classList.add("flex");
             h2.classList.add("gap-2");
@@ -126,7 +126,7 @@ document.getElementById("parallelogram-btn").addEventListener("click", function 
             count += 1;
 
             const h2 = document.createElement("h2");
-            createTr(h2, count, Name, firstInput, secondInput, total);
+            createh2(h2, count, Name, firstInput, secondInput, total);
 
             h2.classList.add("flex");
             h2.classList.add("gap-2");
@@ -171,7 +171,7 @@ document.getElementById("rhombus-btn").addEventListener("click", function (e) {
             count += 1;
 
             const h2 = document.createElement("h2");
-            createTr(h2, count, Name, firstInput, secondInput, total);
+            createh2(h2, count, Name, firstInput, secondInput, total);
 
             h2.classList.add("flex");
             h2.classList.add("gap-2");
@@ -218,7 +218,7 @@ document.getElementById("pentagon-btn").addEventListener("click", function (e) {
             count += 1;
 
             const h2 = document.createElement("h2");
-            createTr(h2, count, Name, firstInput, secondInput, total);
+            createh2(h2, count, Name, firstInput, secondInput, total);
 
             h2.classList.add("flex");
             h2.classList.add("gap-2");
@@ -259,11 +259,11 @@ document.getElementById("ellipse-btn").addEventListener("click", function (e) {
 
             const tr = document.createElement("h2");
 
-            createTr(tr, count, Name, firstInput, secondInput, total);
+            createh2(tr, count, Name, firstInput, secondInput, total);
 
 
             const h2 = document.createElement("h2");
-            createTr(h2, count, Name, firstInput, secondInput, total);
+            createh2(h2, count, Name, firstInput, secondInput, total);
 
             h2.classList.add("flex");
             h2.classList.add("gap-2");
